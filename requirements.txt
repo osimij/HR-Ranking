@@ -1,0 +1,18 @@
+# Core parsing dependency
+pypdf>=6.1.0
+pymorphy2>=0.9.1
+pandas>=2.3.0
+rank-bm25>=0.2.2
+lightgbm>=4.6.0
+pyarrow>=21.0.0
+
+# Testing
+pytest>=7.0
+
+sentence-transformers>=5.1.0
+
+# LLM integration
+google-genai>=0.2.0
+
+# Web interface
+streamlit>=1.28.0
