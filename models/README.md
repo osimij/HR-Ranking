@@ -1,25 +1,25 @@
 # Models Directory
 
-This directory should contain trained LightGBM models.
+This directory contains trained LightGBM models.
 
-## Required Models
-
-Due to GitHub file size limits, model files are not included in the repository.
+## ✅ Included Pre-trained Models
 
 ### Main Version (RECOMMENDED - 78.2% accuracy)
-- **File:** `lambdarank_full.txt`
+- **File:** `lambdarank_full.txt` ✅ Included
 - **Embeddings used:** paraphrase-multilingual-MiniLM-L12-v2
 - **Performance:** NDCG@5 = 0.7820
+- **Status:** Production-ready
 
-### Experimental ruBERT Version (62.6% accuracy)
-- **File:** `lambdarank_rubert.txt`
-- **Embeddings used:** ai-forever/sbert_large_nlu_ru
-- **Performance:** NDCG@5 = 0.6258
+### Other Available Models
+- **File:** `lambdarank_pruned_baseline.txt` ✅ Included
+- **Performance:** NDCG@5 = 0.6582
+- **Status:** Baseline with 15 features
 
-## How to Get Models
+### Experimental Versions
+- `lambdarank.txt` - Early version
+- `lambdarank_full_v2.txt` - Alternative training run
 
-1. **Train your own:** Use the scripts in `/scripts` directory
-2. **Contact the project maintainer:** Get pre-trained model files
+**Note:** ruBERT model (`lambdarank_rubert.txt`) needs to be regenerated if you want to experiment with Russian-specific embeddings.
 
 ## Training Your Own Model
 

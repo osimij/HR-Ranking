@@ -21,17 +21,14 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## 📊 Step 3: Get the Data Files
+## 📊 Step 3: Get Training Data (Optional)
 
-The following large files are **not in the repository**. You need to get them from the project maintainer:
+**Good news:** Pre-trained models are already included in the repository!
 
-### Required Files:
-1. **Training data:** `train.csv` (~973 MB) → Place in project root
-2. **Pre-trained models:** 
-   - `models/lambdarank_full.txt` (recommended, 78% accuracy)
-   - `models/lambdarank_rubert.txt` (experimental, 62% accuracy)
+The only large file **not in the repository** is:
+- **Training data:** `train.csv` (~973 MB)
 
-**Ask the project maintainer for these files.**
+You only need this if you want to retrain models. For just running the app, you're all set!
 
 ## 🔑 Step 4: Set Up Gemini API (Optional but Recommended)
 

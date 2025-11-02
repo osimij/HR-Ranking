@@ -44,24 +44,21 @@ cd HR-Ranking
 pip install -r requirements.txt
 ```
 
-### ⚠️ Important: Models and Data Files
+### ⚠️ Important: Training Data
 
-Due to GitHub file size limits, the following files are **not included** in the repository:
+Due to GitHub file size limits, the following file is **not included** in the repository:
 - `train.csv` (973 MB) - Training dataset
-- `data/*.parquet` - Generated feature files
-- `models/*.txt` - Trained LightGBM models
 
-**To run the system, you need to either:**
+**The trained models ARE included** (they're small text files ~100KB).
 
-1. **Train your own model:**
-   ```bash
-   # Get training data (train.csv) from your data source
-   # Then generate features and train
-   python3 scripts/generate_features.py --dataset train.csv --output data/features.parquet
-   python3 scripts/train_lambdarank.py --features data/features.parquet --output models/my_model.txt
-   ```
+**To train your own models, you need:**
 
-2. **Or get pre-trained models** from the project maintainer
+```bash
+# Get training data (train.csv) from the project maintainer
+# Then generate features and train
+python3 scripts/generate_features.py --dataset train.csv --output data/features.parquet
+python3 scripts/train_lambdarank.py --features data/features.parquet --output models/my_model.txt
+```
 
 ### Running the Web App
 
