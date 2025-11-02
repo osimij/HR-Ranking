@@ -6,8 +6,7 @@ train.csv
 data/*.parquet
 data_full/*.parquet
 
-# Model files - can be regenerated
-models/*.txt
+# Note: Model .txt files ARE included (they're small, ~100KB max)
 
 # Python
 __pycache__/
